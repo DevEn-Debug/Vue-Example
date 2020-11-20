@@ -12,13 +12,13 @@
     <div class="top">
     </div>
     <div class="container" id="app">
+      <a class="btn btn-warning" href="#">Cart({{cart.length}})</a>
       <div class="row">
-        <product></product>
-        <product></product>
-        <product></product>
-        <product></product>
-        <product></product>
-        <product></product>
+
+        <product :premium='premium' @addcart='updateCart'></product>
+        <product :premium='premium' @addcart='updateCart'></product>
+
+        
       </div>
     </div>
 
